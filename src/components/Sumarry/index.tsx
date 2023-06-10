@@ -5,7 +5,12 @@ import CoffeeIcon from '../../assets/icons/CoffeeIcon.svg'
 import ShoppingCartIcon from '../../assets/icons/ShoppingCartIcon.svg'
 import TimerIcon from '../../assets/icons/TimerIcon.svg'
 
-import { CoffeeLogo, SummaryBackground, SummaryText } from './styles'
+import {
+  CoffeeLogo,
+  SummaryBackground,
+  SummaryIcons,
+  SummaryText,
+} from './styles'
 
 export function Summary() {
   return (
@@ -17,21 +22,27 @@ export function Summary() {
             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
             hora
           </p>
-          <div>
-            <img src={BoxIcon} alt="" />
-            <p>Compra simples e segura</p>
-            <img src={CoffeeIcon} alt="" />
-            <p>Embalagem mantém o café intacto</p>
+          <SummaryIcons>
             <img src={ShoppingCartIcon} alt="" />
-            <p>Entrega rápida e rastreada</p>
+            <p>Compra simples e segura</p>
             <img src={TimerIcon} alt="" />
+            <p>Embalagem mantém o café intacto</p>
+            <img src={BoxIcon} alt="" />
+            <p>Entrega rápida e rastreada</p>
+            <img src={CoffeeIcon} alt="" />
             <p>O café chega fresquinho até você</p>
-          </div>
+          </SummaryIcons>
         </SummaryText>
         <CoffeeLogo>
           <img src={coffeeLogo} alt="" />
         </CoffeeLogo>
       </SummaryBackground>
+      <div>
+        <span>Nossos cafés</span>
+        <div>
+          <div></div>
+        </div>
+      </div>
     </>
   )
 }

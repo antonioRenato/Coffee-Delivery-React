@@ -49,7 +49,20 @@ export const SummaryText = styled.div`
     color: ${(props) => props.theme['--gray-700']};
     font-stretch: 100;
   }
+`
 
-  div > p {
+export const SummaryIcons = styled.div`
+  margin-top: 2rem;
+
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem 1fr; /* Tamanho das colunas */
+  grid-template-rows: 5rem; /* Duas linhas */
+  grid-column-gap: 0.5rem; /* Espaçamento entre as colunas */
+  align-items: center;
+
+  max-width: 43.75rem;
+  img {
+    height: 2rem; /* Altura fixa para os ícones */
+    width: 2rem; /* Preenche a largura da coluna */
   }
 `
