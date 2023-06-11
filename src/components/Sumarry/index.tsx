@@ -5,16 +5,16 @@ import CoffeeIcon from '../../assets/icons/CoffeeIcon.svg'
 import ShoppingCartIcon from '../../assets/icons/ShoppingCartIcon.svg'
 import TimerIcon from '../../assets/icons/TimerIcon.svg'
 
-import ExpressoImg from '../../assets/expresso.svg'
+import ExpressoTrad from '../../assets/expresso.svg'
 
 import {
   CoffeeLogo,
-  MainItem,
   SummaryBackground,
   SummaryIcons,
   SummaryMain,
   SummaryText,
 } from './styles'
+import { ItemShop } from '../ItemShop'
 
 export function Summary() {
   return (
@@ -43,21 +43,120 @@ export function Summary() {
       </SummaryBackground>
       <SummaryMain>
         <span>Nossos cafés</span>
-
-        <MainItem>
-          <img src={ExpressoImg} alt="" />
-          <p className="tag">TRADICIONAL</p>
-          <span>Expresso Tradicional</span>
-          <p>O tradicional café feito com água quente e grãos moídos</p>
-          <div className="price">
-            <span>R$ 9,90</span>
-            <div>
-              <button>-</button>
-              <p>1</p>
-              <button>+</button>
-            </div>
-          </div>
-        </MainItem>
+        <div className="itemsCoffee">
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+          <ItemShop
+            image={ExpressoTrad}
+            tags={['TRADICIONAL']}
+            title={'Expresso Tradicional'}
+            text={'O tradicional café feito com água quente e grãos moídos'}
+            price={'9,90'}
+            quantity={1}
+          />
+        </div>
       </SummaryMain>
     </>
   )
