@@ -17,8 +17,12 @@ export const SummaryBackground = styled.div`
 `
 
 export const CoffeeLogo = styled.div`
-  margin: auto 10rem;
-  height: 360px;
+  margin: 2.3rem 10rem;
+
+  .imgAmpliada {
+    height: 650px;
+    width: 650px;
+  }
 `
 
 export const SummaryText = styled.div`

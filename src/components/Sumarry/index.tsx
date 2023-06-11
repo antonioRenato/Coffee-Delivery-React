@@ -38,7 +38,7 @@ export function Summary() {
           </SummaryIcons>
         </SummaryText>
         <CoffeeLogo>
-          <img src={coffeeLogo} alt="" />
+          <img className="imgAmpliada" src={coffeeLogo} alt="" />
         </CoffeeLogo>
       </SummaryBackground>
       <SummaryMain>
