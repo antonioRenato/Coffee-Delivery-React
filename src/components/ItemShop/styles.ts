@@ -17,7 +17,7 @@ export const MainItem = styled.div`
   margin-bottom: 2rem;
 
   img {
-    margin-top: -4rem;
+    margin-top: -4.8rem;
   }
 
   .tagContainer {
