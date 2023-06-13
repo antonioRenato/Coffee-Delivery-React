@@ -1,3 +1,4 @@
+import { ShoppingCart } from 'phosphor-react'
 import { MainItem } from './styles'
 
 interface ItemShopProps {
@@ -25,10 +26,15 @@ export function ItemShop(props: ItemShopProps) {
 
       <div className="price">
         <span>R$ {props.price}</span>
-        <div>
+        <div className="buttonsQuantity">
           <button>-</button>
           <p>{props.quantity}</p>
           <button>+</button>
+        </div>
+        <div>
+          <button className="CarIcon">
+            <ShoppingCart size={24} color="#F3F2F2" />
+          </button>
         </div>
       </div>
     </MainItem>

@@ -2,7 +2,7 @@ import { styled } from 'styled-components'
 
 export const MainItem = styled.div`
   width: 16rem;
-  height: 18rem;
+  height: 19rem;
   border-radius: 8px;
 
   background-color: ${(props) => props.theme['--white-400']};
@@ -17,7 +17,7 @@ export const MainItem = styled.div`
   margin-bottom: 2rem;
 
   img {
-    margin-top: -2.5rem;
+    margin-top: -3.5rem;
   }
 
   .tagContainer {
@@ -70,10 +70,10 @@ export const MainItem = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: center;
+    gap: 0.5rem;
 
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 
     span {
       font-weight: 700;
@@ -86,16 +86,15 @@ export const MainItem = styled.div`
       color: ${(props) => props.theme['--gray-500']};
     }
 
-    div {
+    .buttonsQuantity {
       display: flex;
       flex-direction: row;
       align-items: center;
 
-      width: 4.5rem;
-      height: 2.4rem;
+      margin-left: 2rem;
 
+      border-radius: 8px;
       background: ${(props) => props.theme['--white-600']};
-      border-radius: 6px;
 
       p {
         font-weight: 400;
@@ -112,6 +111,9 @@ export const MainItem = styled.div`
         align-items: center;
         justify-content: center;
 
+        width: 3.5rem;
+        height: 2.4rem;
+
         font-weight: 400;
         font-size: 24px;
         line-height: 140%;
@@ -120,8 +122,34 @@ export const MainItem = styled.div`
 
         width: 2rem;
         border: 0;
+        border-radius: 8px;
 
         cursor: pointer;
+      }
+
+      button:hover {
+        background: ${(props) => props.theme['--white-400']};
+      }
+    }
+    div {
+      .CarIcon {
+        width: 2.375rem;
+        height: 2.375rem;
+
+        background-color: ${(props) => props.theme['--purple-700']};
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+
+        border-radius: 8px;
+        border: 0;
+      }
+
+      .CarIcon:hover {
+        background-color: ${(props) => props.theme['--purple-400']};
       }
     }
   }
