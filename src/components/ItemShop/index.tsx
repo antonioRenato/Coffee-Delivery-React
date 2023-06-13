@@ -22,6 +22,7 @@ export function ItemShop(props: ItemShopProps) {
       <div className="tagContainer"> {tagEspecial}</div>
       <span>{props.title}</span>
       <p>{props.text}</p>
+
       <div className="price">
         <span>R$ {props.price}</span>
         <div>

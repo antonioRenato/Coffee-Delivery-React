@@ -2,7 +2,7 @@ import { styled } from 'styled-components'
 
 export const MainItem = styled.div`
   width: 16rem;
-  height: 19.375rem;
+  height: 18rem;
   border-radius: 8px;
 
   background-color: ${(props) => props.theme['--white-400']};
@@ -13,11 +13,11 @@ export const MainItem = styled.div`
   justify-content: center;
   gap: 0.5rem;
 
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 
   img {
-    margin-top: -4.8rem;
+    margin-top: -2.5rem;
   }
 
   .tagContainer {
@@ -72,6 +72,8 @@ export const MainItem = styled.div`
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
+
+    margin-top: 2rem;
 
     span {
       font-weight: 700;
