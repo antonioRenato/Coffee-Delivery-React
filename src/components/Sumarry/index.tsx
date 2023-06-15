@@ -28,10 +28,19 @@ import {
   SummaryText,
 } from './styles'
 import { ItemShop } from '../ItemShop'
+import { Header } from '../Header'
+import { useState } from 'react'
 
 export function Summary() {
+  const [totalItemsPurchased, setTotalItemsPurchased] = useState(0)
+
+  function handleItemPurchased() {
+    setTotalItemsPurchased((totalItemsPurchased) => totalItemsPurchased + 1) // Atualiza o número total de itens comprados
+  }
+
   return (
     <>
+      <Header totalItemsPurchased={totalItemsPurchased} />
       <SummaryBackground>
         <SummaryText>
           <span>Encontre o café perfeito para qualquer hora do dia</span>
@@ -64,6 +73,7 @@ export function Summary() {
             text={'O tradicional café feito com água quente e grãos moídos'}
             price={'7,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={ExpressoAmericano}
@@ -72,6 +82,7 @@ export function Summary() {
             text={'Expresso diluído, menos intenso que o tradicional'}
             price={'8,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={ExpressoCremoso}
@@ -80,6 +91,7 @@ export function Summary() {
             text={'Café expresso tradicional com espuma cremosa'}
             price={'8,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeGelado}
@@ -88,6 +100,7 @@ export function Summary() {
             text={'Bebida preparada com café expresso e cubos de gelo'}
             price={'8,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeLeite}
@@ -96,6 +109,7 @@ export function Summary() {
             text={'Meio a meio de expresso tradicional com leite vaporizado'}
             price={'7,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeLatte}
@@ -106,6 +120,7 @@ export function Summary() {
             }
             price={'9,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={Cappucino}
@@ -116,6 +131,7 @@ export function Summary() {
             }
             price={'9,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeMacchiato}
@@ -126,6 +142,7 @@ export function Summary() {
             }
             price={'9,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeMocaccino}
@@ -134,6 +151,7 @@ export function Summary() {
             text={'Café expresso com calda de chocolate, pouco leite e espuma'}
             price={'9,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeChocolateQuente}
@@ -144,6 +162,7 @@ export function Summary() {
             }
             price={'8,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeCubano}
@@ -154,6 +173,7 @@ export function Summary() {
             }
             price={'10,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeHaviano}
@@ -162,6 +182,7 @@ export function Summary() {
             text={'Bebida adocicada preparada com café e leite de coco'}
             price={'10,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeArabe}
@@ -170,6 +191,7 @@ export function Summary() {
             text={'Bebida preparada com grãos de café árabe e especiarias'}
             price={'10,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
           <ItemShop
             image={CafeIrlandes}
@@ -178,6 +200,7 @@ export function Summary() {
             text={'Bebida a base de café, uísque irlandês, açúcar e chantilly'}
             price={'12,90'}
             quantity={1}
+            onItemPurchased={handleItemPurchased}
           />
         </div>
       </SummaryMain>

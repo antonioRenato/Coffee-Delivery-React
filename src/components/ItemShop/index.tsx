@@ -9,11 +9,11 @@ interface ItemShopProps {
   text: string
   price: string
   quantity: number
+  onItemPurchased: () => void
 }
 
 export function ItemShop(props: ItemShopProps) {
   const [quantity, setQuantity] = useState(1)
-  const [quantityItems, setQuantityItems] = useState(0)
 
   const tagEspecial = props.tags.map((tag, index) => (
     <p key={index} className="tag">
@@ -33,10 +33,8 @@ export function ItemShop(props: ItemShopProps) {
     })
   }
 
-  function totalItemsPurchased() {
-    setQuantityItems((quantityItems) => {
-      return (quantityItems += 1)
-    })
+  function handlePurchase() {
+    props.onItemPurchased()
   }
 
   return (
@@ -54,7 +52,7 @@ export function ItemShop(props: ItemShopProps) {
           <button onClick={handleAddCoffee}>+</button>
         </div>
         <div>
-          <button className="CarIcon" onClick={totalItemsPurchased}>
+          <button className="CarIcon" onClick={handlePurchase}>
             <ShoppingCart size={24} color="#F3F2F2" />
           </button>
         </div>

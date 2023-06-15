@@ -3,7 +3,11 @@ import logoIgnite from '../../assets/logo.svg'
 import city from '../../assets/city.svg'
 import { ShoppingCart } from 'phosphor-react'
 
-export function Header() {
+interface HeaderProps {
+  totalItemsPurchased: number
+}
+
+export function Header(props: HeaderProps) {
   return (
     <HeaderContainer>
       <img src={logoIgnite} alt="" />
@@ -12,6 +16,9 @@ export function Header() {
         <img src={city} alt="" />
         <div>
           <ShoppingCart color="#C47F17" size={20} />
+          <div className="numberOfShops">
+            <span>{props.totalItemsPurchased}</span>
+          </div>
         </div>
       </nav>
     </HeaderContainer>
