@@ -14,6 +14,8 @@ export const SummaryBackground = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 8rem;
 `
 
 export const CoffeeLogo = styled.div`

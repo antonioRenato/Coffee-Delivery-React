@@ -16,9 +16,9 @@ export function Header(props: HeaderProps) {
         <img src={city} alt="" />
         <div>
           <ShoppingCart color="#C47F17" size={20} />
-          <div className="numberOfShops">
-            <span>{props.totalItemsPurchased}</span>
-          </div>
+        </div>
+        <div className="numberOfShops">
+          <span>{props.totalItemsPurchased}</span>
         </div>
       </nav>
     </HeaderContainer>
