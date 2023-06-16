@@ -13,13 +13,21 @@ interface ItemShopProps {
 }
 
 export function ItemShop(props: ItemShopProps) {
-  const [quantity, setQuantity] = useState(1)
+  const [quantity, setQuantity] = useState(0)
 
   const tagEspecial = props.tags.map((tag, index) => (
     <p key={index} className="tag">
       {tag}
     </p>
   ))
+
+  function isQuantityZero() {
+    if (quantity === 0) {
+      return true
+    } else {
+      return false
+    }
+  }
 
   function handleAddCoffee() {
     setQuantity((quantity) => {
@@ -35,6 +43,8 @@ export function ItemShop(props: ItemShopProps) {
 
   function handlePurchase() {
     props.onItemPurchased()
+
+    setQuantity(0)
   }
 
   return (
@@ -47,7 +57,9 @@ export function ItemShop(props: ItemShopProps) {
       <div className="price">
         <span>R$ {props.price}</span>
         <div className="buttonsQuantity">
-          <button onClick={handleDecCoffee}>-</button>
+          <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
+            -
+          </button>
           <p>{quantity}</p>
           <button onClick={handleAddCoffee}>+</button>
         </div>

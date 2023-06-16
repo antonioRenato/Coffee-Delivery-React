@@ -72,7 +72,7 @@ export function Summary() {
             title={'Expresso Tradicional'}
             text={'O tradicional café feito com água quente e grãos moídos'}
             price={'7,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -81,7 +81,7 @@ export function Summary() {
             title={'Expresso Americano'}
             text={'Expresso diluído, menos intenso que o tradicional'}
             price={'8,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -90,7 +90,7 @@ export function Summary() {
             title={'Expresso Cremoso'}
             text={'Café expresso tradicional com espuma cremosa'}
             price={'8,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -99,7 +99,7 @@ export function Summary() {
             title={'Expresso Gelado'}
             text={'Bebida preparada com café expresso e cubos de gelo'}
             price={'8,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -108,7 +108,7 @@ export function Summary() {
             title={'Café com Leite'}
             text={'Meio a meio de expresso tradicional com leite vaporizado'}
             price={'7,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -119,7 +119,7 @@ export function Summary() {
               'Uma dose de café expresso com o dobro de leite e espuma cremosa'
             }
             price={'9,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -130,7 +130,7 @@ export function Summary() {
               'Bebida com canela feita de doses iguais de café, leite e espuma'
             }
             price={'9,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -141,7 +141,7 @@ export function Summary() {
               'Café expresso misturado com um pouco de leite quente e espuma'
             }
             price={'9,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -150,7 +150,7 @@ export function Summary() {
             title={'Mocaccino'}
             text={'Café expresso com calda de chocolate, pouco leite e espuma'}
             price={'9,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -161,7 +161,7 @@ export function Summary() {
               'Bebida feita com chocolate dissolvido no leite quente e café'
             }
             price={'8,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -172,7 +172,7 @@ export function Summary() {
               'Drink gelado de café expresso com rum, creme de leite e hortelã'
             }
             price={'10,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -181,7 +181,7 @@ export function Summary() {
             title={'Havaiano'}
             text={'Bebida adocicada preparada com café e leite de coco'}
             price={'10,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -190,7 +190,7 @@ export function Summary() {
             title={'Árabe'}
             text={'Bebida preparada com grãos de café árabe e especiarias'}
             price={'10,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
           <ItemShop
@@ -199,7 +199,7 @@ export function Summary() {
             title={'Irlandês'}
             text={'Bebida a base de café, uísque irlandês, açúcar e chantilly'}
             price={'12,90'}
-            quantity={1}
+            quantity={0}
             onItemPurchased={handleItemPurchased}
           />
         </div>
