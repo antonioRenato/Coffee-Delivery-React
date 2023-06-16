@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     gap: 0.8rem;
 
-    div {
+    button {
       border-radius: 8px;
 
       width: 2.5rem;
@@ -33,6 +33,9 @@ export const HeaderContainer = styled.header`
       align-items: center;
 
       background-color: ${(props) => props.theme['--yellow-300']};
+
+      cursor: pointer;
+      border: 0;
     }
 
     .numberOfShops {

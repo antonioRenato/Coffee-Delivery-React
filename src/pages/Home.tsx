@@ -6,7 +6,6 @@ export function Home() {
       <div>
         <Summary />
       </div>
-      <main></main>
     </>
   )
 }
