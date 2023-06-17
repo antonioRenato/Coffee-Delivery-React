@@ -64,7 +64,11 @@ export function ItemShop(props: ItemShopProps) {
           <button onClick={handleAddCoffee}>+</button>
         </div>
         <div>
-          <button className="CarIcon" onClick={handlePurchase}>
+          <button
+            className="CarIcon"
+            onClick={handlePurchase}
+            disabled={isQuantityZero()}
+          >
             <ShoppingCart size={24} color="#F3F2F2" />
           </button>
         </div>

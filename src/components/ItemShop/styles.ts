@@ -151,6 +151,10 @@ export const MainItem = styled.div`
       .CarIcon:hover {
         background-color: ${(props) => props.theme['--purple-400']};
       }
+
+      .CarIcon:disabled {
+        background: ${(props) => props.theme['--gray-300']};
+      }
     }
   }
 `
