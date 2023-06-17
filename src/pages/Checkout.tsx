@@ -6,9 +6,12 @@ export function Checkout() {
   const searchParams = new URLSearchParams(location.search)
   const totalItemsPurchased = searchParams.get('totalItemsPurchased')
 
+  const parsedTotalItemsPurchased =
+    totalItemsPurchased !== null ? parseInt(totalItemsPurchased) : 0
+
   return (
     <>
-      <Header />
+      <Header totalItemsPurchased={parsedTotalItemsPurchased} />
       <div>
         <div></div>
         <div></div>

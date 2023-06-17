@@ -11,12 +11,14 @@ interface HeaderProps {
 export function Header(props: HeaderProps) {
   return (
     <HeaderContainer>
-      <img src={logoIgnite} alt="" />
-
+      <Link to={`/`} title="Home">
+        <img src={logoIgnite} alt="" />
+      </Link>
       <nav>
         <img src={city} alt="" />
+
         <Link
-          to="/checkout?totalItemsPurchased={totalItemsPurchased}"
+          to={`/checkout?totalItemsPurchased=${props.totalItemsPurchased}`}
           title="Checkout"
         >
           <button>
