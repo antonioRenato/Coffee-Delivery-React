@@ -9,6 +9,14 @@ interface HeaderProps {
 }
 
 export function Header(props: HeaderProps) {
+  function isTotalItemsPurchasedEqualsZero() {
+    if (props.totalItemsPurchased === 0) {
+      return true
+    } else {
+      return true
+    }
+  }
+
   return (
     <HeaderContainer>
       <Link to={`/`} title="Home">
@@ -17,14 +25,15 @@ export function Header(props: HeaderProps) {
       <nav>
         <img src={city} alt="" />
 
-        <Link
-          to={`/checkout?totalItemsPurchased=${props.totalItemsPurchased}`}
-          title="Checkout"
-        >
-          <button>
+        <button disabled={isTotalItemsPurchasedEqualsZero()}>
+          <Link
+            to={`/checkout?totalItemsPurchased=${props.totalItemsPurchased}`}
+            title="Checkout"
+          >
             <ShoppingCart color="#C47F17" size={20} />
-          </button>
-        </Link>
+          </Link>
+        </button>
+
         <div className="numberOfShops">
           <span>{props.totalItemsPurchased}</span>
         </div>

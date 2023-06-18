@@ -136,7 +136,7 @@ export const MainItem = styled.div`
         width: 2.375rem;
         height: 2.375rem;
 
-        background-color: ${(props) => props.theme['--purple-700']};
+        background-color: ${(props) => props.theme['--purple-500']};
 
         display: flex;
         align-items: center;
@@ -149,11 +149,11 @@ export const MainItem = styled.div`
       }
 
       .CarIcon:hover {
-        background-color: ${(props) => props.theme['--purple-400']};
+        background-color: ${(props) => props.theme['--purple-200']};
       }
 
       .CarIcon:disabled {
-        background: ${(props) => props.theme['--gray-300']};
+        background: ${(props) => props.theme['--gray-200']};
       }
     }
   }
