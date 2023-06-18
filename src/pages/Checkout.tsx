@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { Header } from '../components/Header'
+import { CompleteCheckout } from '../components/Endereco'
 
 export function Checkout() {
   const location = useLocation()
@@ -13,8 +14,7 @@ export function Checkout() {
     <>
       <Header totalItemsPurchased={parsedTotalItemsPurchased} />
       <div>
-        <div></div>
-        <div></div>
+        <CompleteCheckout />
       </div>
     </>
   )
