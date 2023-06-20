@@ -25,6 +25,7 @@ export const SpanEndereco = styled.div`
 export const Endereco = styled.div`
   position: relative;
   width: 50%;
+  height: 25rem;
   background-color: ${(props) => props.theme['--white-400']};
 
   display: flex;
@@ -34,10 +35,6 @@ export const Endereco = styled.div`
   justify-content: center;
 
   margin-top: 1rem;
-
-  input {
-    height: 3rem;
-  }
 
   .imageMap {
     margin-left: 3rem;
@@ -49,6 +46,20 @@ export const Endereco = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
-    margin-top: 2rem;
+  }
+`
+
+export const FormEndereco = styled.form`
+  margin-left: 3rem;
+
+  position: relative;
+
+  input {
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid ${(props) => props.theme['--white-600']};
+    border-radius: 8px;
+    background-color: ${(props) => props.theme['--white-500']};
+    margin-right: 1rem;
   }
 `

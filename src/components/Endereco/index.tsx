@@ -5,7 +5,7 @@ import {
   MapPinLine,
   Money,
 } from 'phosphor-react'
-import { Container, Endereco, SpanEndereco } from './styles'
+import { Container, Endereco, FormEndereco, SpanEndereco } from './styles'
 
 export function CompleteCheckout() {
   return (
@@ -23,29 +23,29 @@ export function CompleteCheckout() {
             </SpanEndereco>
           </div>
 
-          <form action="">
+          <FormEndereco action="">
             <label htmlFor="CEP">
-              <input type="text" placeholder="CEP" size={30} />
+              <input type="text" placeholder="  CEP" size={30} />
             </label>
             <label htmlFor="Rua">
-              <input type="text" placeholder="Rua" size={90} />
+              <input type="text" placeholder="  Rua" size={85} />
             </label>
             <label htmlFor="Numero">
-              <input type="number" placeholder="Número" />
+              <input type="number" placeholder="  Número" />
             </label>
             <label htmlFor="Complemento">
-              <input type="text" placeholder="Complemento" />
+              <input type="text" placeholder="  Complemento" size={60} />
             </label>
             <label htmlFor="Bairro">
-              <input type="text" placeholder="Bairro" />
+              <input type="text" placeholder="  Bairro" />
             </label>
             <label htmlFor="Cidade">
-              <input type="text" placeholder="Cidade" />
+              <input type="text" placeholder="  Cidade" size={35} />
             </label>
             <label htmlFor="UF">
-              <input type="text" placeholder="UF" maxLength={2} />
+              <input type="text" placeholder="  UF" maxLength={2} />
             </label>
-          </form>
+          </FormEndereco>
         </Endereco>
 
         <div>
