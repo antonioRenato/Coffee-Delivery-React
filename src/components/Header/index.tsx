@@ -13,7 +13,7 @@ export function Header(props: HeaderProps) {
     if (props.totalItemsPurchased === 0) {
       return true
     } else {
-      return true
+      return false
     }
   }
 
