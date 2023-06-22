@@ -73,7 +73,7 @@ export const Payment = styled.div`
   background-color: ${(props) => props.theme['--white-400']};
   border-radius: 6px;
   width: 50%;
-  height: 10rem;
+  height: 11rem;
 
   margin-top: 1rem;
   padding: 2rem;
@@ -87,7 +87,8 @@ export const DollarImg = styled.div``
 
 export const PaymentText = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
 
   div {
     display: flex;
@@ -105,5 +106,35 @@ export const PaymentText = styled.div`
       color: ${(props) => props.theme['--gray-500']};
       font-size: 14px;
     }
+  }
+`
+
+export const ButtonLayout = styled.div`
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  margin-top: 1rem;
+
+  button {
+    width: 14rem;
+    height: 3rem;
+
+    font-size: 12px;
+    color: ${(props) => props.theme['--gray-500']};
+
+    background-color: ${(props) => props.theme['--white-600']};
+    border: 0;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    cursor: pointer;
   }
 `

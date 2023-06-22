@@ -6,6 +6,7 @@ import {
   Money,
 } from 'phosphor-react'
 import {
+  ButtonLayout,
   Container,
   DollarImg,
   Endereco,
@@ -66,20 +67,20 @@ export function CompleteCheckout() {
               </p>
             </div>
           </PaymentText>
-          <div>
+          <ButtonLayout>
             <button>
-              <CreditCard />
-              Cartão de Crédito
+              <CreditCard size={14} color="#8047F8" />
+              CARTÃO DE CRÉDITO
             </button>
             <button>
-              <Bank />
-              Cartão de débito
+              <Bank size={14} color="#8047F8" />
+              CARTÃO DE DÉBITO
             </button>
             <button>
-              <Money />
-              Dinheiro
+              <Money size={14} color="#8047F8" />
+              DINHEIRO
             </button>
-          </div>
+          </ButtonLayout>
         </Payment>
       </div>
       <div>
