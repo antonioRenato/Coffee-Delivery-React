@@ -5,7 +5,15 @@ import {
   MapPinLine,
   Money,
 } from 'phosphor-react'
-import { Container, Endereco, FormEndereco, SpanEndereco } from './styles'
+import {
+  Container,
+  DollarImg,
+  Endereco,
+  FormEndereco,
+  Payment,
+  PaymentText,
+  SpanEndereco,
+} from './styles'
 
 export function CompleteCheckout() {
   return (
@@ -48,14 +56,16 @@ export function CompleteCheckout() {
           </FormEndereco>
         </Endereco>
 
-        <div>
-          <div>
-            <CurrencyDollar />
-            <span>Pagamento</span>
-            <p>
-              O pagamento é feito na entrega. Escolha a forma que deseja pagar
-            </p>
-          </div>
+        <Payment>
+          <PaymentText>
+            <CurrencyDollar size={26} color="#8047F8" />
+            <div>
+              <span>Pagamento</span>
+              <p>
+                O pagamento é feito na entrega. Escolha a forma que deseja pagar
+              </p>
+            </div>
+          </PaymentText>
           <div>
             <button>
               <CreditCard />
@@ -70,7 +80,7 @@ export function CompleteCheckout() {
               Dinheiro
             </button>
           </div>
-        </div>
+        </Payment>
       </div>
       <div>
         <h3>Cafés selecionados</h3>
