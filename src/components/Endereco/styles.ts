@@ -24,7 +24,7 @@ export const SpanEndereco = styled.div`
 
 export const Endereco = styled.div`
   position: relative;
-  width: 50%;
+  width: 50rem;
   height: 25rem;
   background-color: ${(props) => props.theme['--white-400']};
 
@@ -72,7 +72,7 @@ export const FormEndereco = styled.form`
 export const Payment = styled.div`
   background-color: ${(props) => props.theme['--white-400']};
   border-radius: 6px;
-  width: 50%;
+  width: 50rem;
   height: 11rem;
 
   margin-top: 1rem;
@@ -82,8 +82,6 @@ export const Payment = styled.div`
   flex-direction: column;
   gap: 0.5rem;
 `
-
-export const DollarImg = styled.div``
 
 export const PaymentText = styled.div`
   display: flex;
@@ -137,4 +135,74 @@ export const ButtonLayout = styled.div`
 
     cursor: pointer;
   }
+`
+
+export const SelectedCoffee = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  width: 45rem;
+`
+
+export const SelectedCoffeeContainer = styled.div`
+  background-color: ${(props) => props.theme['--white-400']};
+
+  margin-top: 1rem;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin: 3rem;
+    height: 3rem;
+    width: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 8px;
+    background-color: ${(props) => props.theme['--yellow-400']};
+
+    color: ${(props) => props.theme['--white-500']};
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: ${(props) => props.theme['--yellow-500']};
+    transition: 0.5s;
+  }
+`
+
+export const TextOfPurchasedItems = styled.div`
+  display: flex;
+  justify-content: space-around;
+
+  gap: 13rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.6rem;
+
+    p {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+`
+
+export const ButtonOfPurshaced = styled.div`
+  display: flex;
+  justify-content: center;
 `

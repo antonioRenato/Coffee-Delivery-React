@@ -7,13 +7,16 @@ import {
 } from 'phosphor-react'
 import {
   ButtonLayout,
+  ButtonOfPurshaced,
   Container,
-  DollarImg,
   Endereco,
   FormEndereco,
   Payment,
   PaymentText,
+  SelectedCoffee,
+  SelectedCoffeeContainer,
   SpanEndereco,
+  TextOfPurchasedItems,
 } from './styles'
 
 export function CompleteCheckout() {
@@ -69,23 +72,41 @@ export function CompleteCheckout() {
           </PaymentText>
           <ButtonLayout>
             <button>
-              <CreditCard size={14} color="#8047F8" />
+              <CreditCard size={20} color="#8047F8" />
               CARTÃO DE CRÉDITO
             </button>
             <button>
-              <Bank size={14} color="#8047F8" />
+              <Bank size={20} color="#8047F8" />
               CARTÃO DE DÉBITO
             </button>
             <button>
-              <Money size={14} color="#8047F8" />
+              <Money size={20} color="#8047F8" />
               DINHEIRO
             </button>
           </ButtonLayout>
         </Payment>
       </div>
-      <div>
+      <SelectedCoffee>
         <h3>Cafés selecionados</h3>
-      </div>
+        <SelectedCoffeeContainer>
+          <div></div>
+          <TextOfPurchasedItems>
+            <div>
+              <p>Total de itens</p>
+              <p>Entrega</p>
+              <span>Total</span>
+            </div>
+            <div>
+              <p>R$ 29,70</p>
+              <p>R$ 3,50</p>
+              <span>R$ 33,20</span>
+            </div>
+          </TextOfPurchasedItems>
+          <ButtonOfPurshaced>
+            <button>Confirmar Pedido</button>
+          </ButtonOfPurshaced>
+        </SelectedCoffeeContainer>
+      </SelectedCoffee>
     </Container>
   )
 }

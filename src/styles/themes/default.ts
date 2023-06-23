@@ -3,6 +3,7 @@ export const defaultTheme = {
 
   '--yellow-700': '#C47F17',
   '--yellow-500': '#DBAC2C',
+  '--yellow-400': '#f7bd20',
   '--yellow-300': '#F1E9C9',
 
   '--purple-700': '#4B2995',
