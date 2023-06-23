@@ -154,25 +154,6 @@ export const SelectedCoffeeContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  button {
-    margin: 3rem;
-    height: 3rem;
-    width: 20rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 0;
-    border-radius: 8px;
-    background-color: ${(props) => props.theme['--yellow-400']};
-
-    color: ${(props) => props.theme['--white-500']};
-    font-weight: 700;
-
-    cursor: pointer;
-  }
-
   button:hover {
     background-color: ${(props) => props.theme['--yellow-500']};
     transition: 0.5s;
@@ -205,4 +186,80 @@ export const TextOfPurchasedItems = styled.div`
 export const ButtonOfPurshaced = styled.div`
   display: flex;
   justify-content: center;
+
+  button {
+    margin: 3rem;
+    height: 3rem;
+    width: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 8px;
+    background-color: ${(props) => props.theme['--yellow-400']};
+
+    color: ${(props) => props.theme['--white-500']};
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+`
+
+export const SelectedCoffeeItems = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .buttonsQuantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 2rem;
+
+    border-radius: 8px;
+    background: ${(props) => props.theme['--white-600']};
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+
+      color: ${(props) => props.theme['--gray-900']};
+    }
+
+    button {
+      color: ${(props) => props.theme['--purple-500']};
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 3.5rem;
+      height: 2.4rem;
+
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 140%;
+
+      background: ${(props) => props.theme['--white-600']};
+
+      width: 2rem;
+      border: 0;
+      border-radius: 8px;
+
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: ${(props) => props.theme['--white-400']};
+    }
+  }
 `

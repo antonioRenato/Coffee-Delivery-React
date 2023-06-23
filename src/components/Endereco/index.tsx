@@ -5,6 +5,11 @@ import {
   MapPinLine,
   Money,
 } from 'phosphor-react'
+
+import { useState } from 'react'
+import coffeeGelado from '../../assets/Cafe_Gelado.svg'
+import coffeeCappucino from '../../assets/cappucino.svg'
+
 import {
   ButtonLayout,
   ButtonOfPurshaced,
@@ -15,11 +20,34 @@ import {
   PaymentText,
   SelectedCoffee,
   SelectedCoffeeContainer,
+  SelectedCoffeeItems,
   SpanEndereco,
   TextOfPurchasedItems,
 } from './styles'
 
 export function CompleteCheckout() {
+  const [quantity, setQuantity] = useState(0)
+
+  function isQuantityZero() {
+    if (quantity === 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  function handleAddCoffee() {
+    setQuantity((quantity) => {
+      return (quantity += 1)
+    })
+  }
+
+  function handleDecCoffee() {
+    setQuantity((quantity) => {
+      return (quantity -= 1)
+    })
+  }
+
   return (
     <Container>
       <div>
@@ -89,7 +117,34 @@ export function CompleteCheckout() {
       <SelectedCoffee>
         <h3>Cafés selecionados</h3>
         <SelectedCoffeeContainer>
-          <div></div>
+          <SelectedCoffeeItems>
+            <img src={coffeeCappucino} alt="" />
+            <div>
+              <p>Expresso Tradicional</p>
+              <div className="buttonsQuantity">
+                <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
+                  -
+                </button>
+                <p>{quantity}</p>
+                <button onClick={handleAddCoffee}>+</button>
+              </div>
+            </div>
+            <span>R$ 9,90</span>
+          </SelectedCoffeeItems>
+          <SelectedCoffeeItems>
+            <img src={coffeeGelado} alt="" />
+            <div>
+              <p>Expresso Tradicional</p>
+              <div className="buttonsQuantity">
+                <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
+                  -
+                </button>
+                <p>{quantity}</p>
+                <button onClick={handleAddCoffee}>+</button>
+              </div>
+            </div>
+            <span>R$ 9,90</span>
+          </SelectedCoffeeItems>
           <TextOfPurchasedItems>
             <div>
               <p>Total de itens</p>
