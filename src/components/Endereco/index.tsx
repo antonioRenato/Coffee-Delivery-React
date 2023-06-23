@@ -118,14 +118,14 @@ export function CompleteCheckout() {
         <h3>Cafés selecionados</h3>
         <SelectedCoffeeContainer>
           <SelectedCoffeeItems>
-            <img src={coffeeCappucino} alt="" />
+            <img src={coffeeCappucino} />
             <div>
               <p>Expresso Tradicional</p>
               <div className="buttonsQuantity">
                 <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
                   -
                 </button>
-                <p>{quantity}</p>
+                <p>{1}</p>
                 <button onClick={handleAddCoffee}>+</button>
               </div>
             </div>
@@ -139,7 +139,7 @@ export function CompleteCheckout() {
                 <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
                   -
                 </button>
-                <p>{quantity}</p>
+                <p>{1}</p>
                 <button onClick={handleAddCoffee}>+</button>
               </div>
             </div>
@@ -151,10 +151,10 @@ export function CompleteCheckout() {
               <p>Entrega</p>
               <span>Total</span>
             </div>
-            <div>
-              <p>R$ 29,70</p>
+            <div className="secondDiv">
+              <p>R$ 19,80</p>
               <p>R$ 3,50</p>
-              <span>R$ 33,20</span>
+              <span>R$ 23,30</span>
             </div>
           </TextOfPurchasedItems>
           <ButtonOfPurshaced>

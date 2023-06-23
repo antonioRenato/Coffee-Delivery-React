@@ -148,6 +148,7 @@ export const SelectedCoffeeContainer = styled.div`
   background-color: ${(props) => props.theme['--white-400']};
 
   margin-top: 1rem;
+  height: 37rem;
 
   border-radius: 8px;
 
@@ -164,16 +165,33 @@ export const TextOfPurchasedItems = styled.div`
   display: flex;
   justify-content: space-around;
 
-  gap: 13rem;
+  gap: 7rem;
 
-  div {
+  div:first-of-type {
     display: flex;
     flex-direction: column;
 
     gap: 0.6rem;
 
     p {
-      font-size: 14px;
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+
+  .secondDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    gap: 0.6rem;
+
+    p {
+      font-size: 20px;
     }
 
     span {
@@ -188,7 +206,7 @@ export const ButtonOfPurshaced = styled.div`
   justify-content: center;
 
   button {
-    margin: 3rem;
+    margin: 2rem;
     height: 3rem;
     width: 20rem;
 
@@ -210,17 +228,36 @@ export const ButtonOfPurshaced = styled.div`
 export const SelectedCoffeeItems = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   gap: 2rem;
 
+  width: 40rem;
+  margin-left: 2rem;
+
+  margin-bottom: 2rem;
+  padding: 2rem;
+
+  border-bottom: 2px solid ${(props) => props.theme['--white-600']};
+
   img {
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 20px;
   }
 
   .buttonsQuantity {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 8rem;
 
     margin-left: 2rem;
 
@@ -229,7 +266,7 @@ export const SelectedCoffeeItems = styled.div`
 
     p {
       font-weight: 400;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 130%;
 
       color: ${(props) => props.theme['--gray-900']};
@@ -242,16 +279,14 @@ export const SelectedCoffeeItems = styled.div`
       align-items: center;
       justify-content: center;
 
-      width: 3.5rem;
-      height: 2.4rem;
+      width: 5.5rem;
+      height: 3.4rem;
 
       font-weight: 400;
-      font-size: 24px;
+      font-size: 32px;
       line-height: 140%;
 
       background: ${(props) => props.theme['--white-600']};
-
-      width: 2rem;
       border: 0;
       border-radius: 8px;
 
