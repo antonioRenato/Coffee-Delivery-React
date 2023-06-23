@@ -118,7 +118,7 @@ export function CompleteCheckout() {
         <h3>Cafés selecionados</h3>
         <SelectedCoffeeContainer>
           <SelectedCoffeeItems>
-            <img src={coffeeCappucino} />
+            <img src={coffeeCappucino} alt="" />
             <div>
               <p>Expresso Tradicional</p>
               <div className="buttonsQuantity">
