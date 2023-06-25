@@ -1,0 +1,50 @@
+import { SelectedCoffeeItems } from './styles'
+import { useState } from 'react'
+
+interface CoffeePurchased {
+  img: string
+  name: string
+  quantity: number
+  price: string
+}
+
+export function ItemPurchased(props: CoffeePurchased) {
+  const [quantity, setQuantity] = useState(0)
+
+  function isQuantityZero() {
+    if (quantity === 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  function handleAddCoffee() {
+    setQuantity((quantity) => {
+      return (quantity += 1)
+    })
+  }
+
+  function handleDecCoffee() {
+    setQuantity((quantity) => {
+      return (quantity -= 1)
+    })
+  }
+
+  return (
+    <SelectedCoffeeItems>
+      <img src={props.img} alt="" />
+      <div>
+        <p>Expresso Tradicional</p>
+        <div className="buttonsQuantity">
+          <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
+            -
+          </button>
+          <p>{1}</p>
+          <button onClick={handleAddCoffee}>+</button>
+        </div>
+      </div>
+      <span>R$ 9,90</span>
+    </SelectedCoffeeItems>
+  )
+}
