@@ -6,7 +6,6 @@ import {
   Money,
 } from 'phosphor-react'
 
-import { useState } from 'react'
 import coffeeGelado from '../../assets/Cafe_Gelado.svg'
 import coffeeCappucino from '../../assets/cappucino.svg'
 
@@ -20,7 +19,6 @@ import {
   PaymentText,
   SelectedCoffee,
   SelectedCoffeeContainer,
-  SelectedCoffeeItems,
   SpanEndereco,
   TextOfPurchasedItems,
 } from './styles'
