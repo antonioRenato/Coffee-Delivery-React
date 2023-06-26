@@ -24,30 +24,9 @@ import {
   SpanEndereco,
   TextOfPurchasedItems,
 } from './styles'
+import { ItemPurchased } from '../ItemPurchased'
 
 export function CompleteCheckout() {
-  const [quantity, setQuantity] = useState(0)
-
-  function isQuantityZero() {
-    if (quantity === 0) {
-      return true
-    } else {
-      return false
-    }
-  }
-
-  function handleAddCoffee() {
-    setQuantity((quantity) => {
-      return (quantity += 1)
-    })
-  }
-
-  function handleDecCoffee() {
-    setQuantity((quantity) => {
-      return (quantity -= 1)
-    })
-  }
-
   return (
     <Container>
       <div>
@@ -117,34 +96,18 @@ export function CompleteCheckout() {
       <SelectedCoffee>
         <h3>Cafés selecionados</h3>
         <SelectedCoffeeContainer>
-          <SelectedCoffeeItems>
-            <img src={coffeeCappucino} alt="" />
-            <div>
-              <p>Expresso Tradicional</p>
-              <div className="buttonsQuantity">
-                <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
-                  -
-                </button>
-                <p>{1}</p>
-                <button onClick={handleAddCoffee}>+</button>
-              </div>
-            </div>
-            <span>R$ 9,90</span>
-          </SelectedCoffeeItems>
-          <SelectedCoffeeItems>
-            <img src={coffeeGelado} alt="" />
-            <div>
-              <p>Expresso Tradicional</p>
-              <div className="buttonsQuantity">
-                <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
-                  -
-                </button>
-                <p>{1}</p>
-                <button onClick={handleAddCoffee}>+</button>
-              </div>
-            </div>
-            <span>R$ 9,90</span>
-          </SelectedCoffeeItems>
+          <ItemPurchased
+            img={coffeeGelado}
+            price="R$ 9,90"
+            quantity={1}
+            name="Expresso café"
+          />
+          <ItemPurchased
+            img={coffeeGelado}
+            price="R$ 10,90"
+            quantity={2}
+            name="Expresso testando"
+          />
           <TextOfPurchasedItems>
             <div>
               <p>Total de itens</p>

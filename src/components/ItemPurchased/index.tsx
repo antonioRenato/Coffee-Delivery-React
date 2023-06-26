@@ -35,16 +35,16 @@ export function ItemPurchased(props: CoffeePurchased) {
     <SelectedCoffeeItems>
       <img src={props.img} alt="" />
       <div>
-        <p>Expresso Tradicional</p>
+        <p>{props.name}</p>
         <div className="buttonsQuantity">
           <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
             -
           </button>
-          <p>{1}</p>
+          <p>{props.quantity}</p>
           <button onClick={handleAddCoffee}>+</button>
         </div>
       </div>
-      <span>R$ 9,90</span>
+      <span>{props.price}</span>
     </SelectedCoffeeItems>
   )
 }
