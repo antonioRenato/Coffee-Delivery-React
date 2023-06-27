@@ -5,7 +5,7 @@ interface CoffeePurchased {
   img: string
   name: string
   quantity: number
-  price: string
+  price: number
 }
 
 export function ItemPurchased(props: CoffeePurchased) {
@@ -40,11 +40,11 @@ export function ItemPurchased(props: CoffeePurchased) {
           <button onClick={handleDecCoffee} disabled={isQuantityZero()}>
             -
           </button>
-          <p>{props.quantity}</p>
+          <p>{quantity}</p>
           <button onClick={handleAddCoffee}>+</button>
         </div>
       </div>
-      <span>{props.price}</span>
+      <span>R$ {props.price}</span>
     </SelectedCoffeeItems>
   )
 }

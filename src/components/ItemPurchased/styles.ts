@@ -3,9 +3,9 @@ import { styled } from 'styled-components'
 export const SelectedCoffeeItems = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 
   width: 40rem;
   margin-left: 2rem;
@@ -18,10 +18,25 @@ export const SelectedCoffeeItems = styled.div`
   img {
     width: 6rem;
     height: 6rem;
+
+    position: absolute;
+    margin-right: 27rem;
   }
 
-  p {
-    font-size: 20px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    width: 20.5rem;
+
+    p {
+      font-size: 20px;
+    }
+
+    margin-left: 6.5rem;
   }
 
   span {
@@ -31,10 +46,9 @@ export const SelectedCoffeeItems = styled.div`
   .buttonsQuantity {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 8rem;
-
-    margin-left: 2rem;
 
     border-radius: 8px;
     background: ${(props) => props.theme['--white-600']};

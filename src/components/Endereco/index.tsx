@@ -96,13 +96,13 @@ export function CompleteCheckout() {
         <SelectedCoffeeContainer>
           <ItemPurchased
             img={coffeeGelado}
-            price="R$ 9,90"
+            price={9.9}
             quantity={1}
             name="Expresso café"
           />
           <ItemPurchased
-            img={coffeeGelado}
-            price="R$ 10,90"
+            img={coffeeCappucino}
+            price={10.9}
             quantity={2}
             name="Expresso testando"
           />
