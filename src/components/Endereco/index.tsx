@@ -23,8 +23,11 @@ import {
   TextOfPurchasedItems,
 } from './styles'
 import { ItemPurchased } from '../ItemPurchased'
+import { useState } from 'react'
 
 export function CompleteCheckout() {
+  const [quantityOfItens, setQuantityOfItens] = useState([])
+
   return (
     <Container>
       <div>
