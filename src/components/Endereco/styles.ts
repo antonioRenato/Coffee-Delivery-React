@@ -25,7 +25,7 @@ export const SpanEndereco = styled.div`
 export const Endereco = styled.div`
   position: relative;
   width: 50rem;
-  height: 25rem;
+  height: 27rem;
   background-color: ${(props) => props.theme['--white-400']};
 
   display: flex;
@@ -62,6 +62,7 @@ export const FormEndereco = styled.form`
     border-radius: 8px;
     background-color: ${(props) => props.theme['--white-500']};
     margin-right: 1rem;
+    padding: 1rem;
   }
 
   input:focus {
@@ -134,6 +135,10 @@ export const ButtonLayout = styled.div`
     gap: 1rem;
 
     cursor: pointer;
+  }
+
+  button:hover {
+    background-color: ${(props) => props.theme['--gray-200']};
   }
 `
 

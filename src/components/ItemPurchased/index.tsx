@@ -5,7 +5,7 @@ interface CoffeePurchased {
   img: string
   name: string
   quantity: number
-  price: number
+  price: string
 }
 
 export function ItemPurchased(props: CoffeePurchased) {

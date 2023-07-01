@@ -23,11 +23,8 @@ import {
   TextOfPurchasedItems,
 } from './styles'
 import { ItemPurchased } from '../ItemPurchased'
-import { useState } from 'react'
 
 export function CompleteCheckout() {
-  const [quantityOfItens, setQuantityOfItens] = useState([])
-
   return (
     <Container>
       <div>
@@ -45,25 +42,25 @@ export function CompleteCheckout() {
 
           <FormEndereco action="">
             <label htmlFor="CEP">
-              <input type="text" placeholder="  CEP" size={30} />
+              <input type="text" placeholder="CEP" size={30} />
             </label>
             <label htmlFor="Rua">
-              <input type="text" placeholder="  Rua" size={85} />
+              <input type="text" placeholder="Rua" size={85} />
             </label>
             <label htmlFor="Numero">
-              <input type="number" placeholder="  Número" />
+              <input type="number" placeholder="Número" />
             </label>
             <label htmlFor="Complemento">
-              <input type="text" placeholder="  Complemento" size={60} />
+              <input type="text" placeholder="Complemento" size={60} />
             </label>
             <label htmlFor="Bairro">
-              <input type="text" placeholder="  Bairro" />
+              <input type="text" placeholder="Bairro" />
             </label>
             <label htmlFor="Cidade">
-              <input type="text" placeholder="  Cidade" size={35} />
+              <input type="text" placeholder="Cidade" size={35} />
             </label>
             <label htmlFor="UF">
-              <input type="text" placeholder="  UF" maxLength={2} />
+              <input type="text" placeholder="UF" maxLength={2} />
             </label>
           </FormEndereco>
         </Endereco>
@@ -97,19 +94,17 @@ export function CompleteCheckout() {
       <SelectedCoffee>
         <h3>Cafés selecionados</h3>
         <SelectedCoffeeContainer>
-          {quantityOfItens.map((quantityOfItens) => (
-            <ItemPurchased
-              key={1}
-              img={coffeeGelado}
-              price={9.9}
-              quantity={1}
-              name="Expresso café"
-            />
-          ))}
+          <ItemPurchased
+            key={1}
+            img={coffeeGelado}
+            price="9,90"
+            quantity={1}
+            name="Expresso café"
+          />
 
           <ItemPurchased
             img={coffeeCappucino}
-            price={10.9}
+            price="10,90"
             quantity={2}
             name="Expresso testando"
           />
