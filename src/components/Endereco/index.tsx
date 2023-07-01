@@ -97,12 +97,16 @@ export function CompleteCheckout() {
       <SelectedCoffee>
         <h3>Cafés selecionados</h3>
         <SelectedCoffeeContainer>
-          <ItemPurchased
-            img={coffeeGelado}
-            price={9.9}
-            quantity={1}
-            name="Expresso café"
-          />
+          {quantityOfItens.map((quantityOfItens) => (
+            <ItemPurchased
+              key={1}
+              img={coffeeGelado}
+              price={9.9}
+              quantity={1}
+              name="Expresso café"
+            />
+          ))}
+
           <ItemPurchased
             img={coffeeCappucino}
             price={10.9}
